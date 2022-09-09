@@ -1,0 +1,111 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --dark: rgba(4, 4, 23, 0.906);
+    --white: rgba(255, 255, 255, 0.906);
+}
+.main {
+    height: 720px;
+    background-repeat: repeat-x;
+    background-image: url(foto/image.jpg);
+    animation: 5s slide infinite linear;
+    cursor: pointer;
+}
+#game {
+    height: 720px;
+    overflow: hidden;
+}
+#character {
+    height: 100px;
+    width: 120px;
+    left: 300px;
+    background-image: url(foto/huy.png);
+    background-size: 120px 100px;
+    position: absolute;
+    top: 200px;
+}
+
+
+/*____________________1________________________*/
+
+#block_a{
+    height: 1300px;
+    width: 60px;
+    position: relative;
+    left: 1700px;
+    animation: 4s block1 infinite linear;
+}
+#block1{
+    height: 550px;
+    width: 100px;
+    top: -200px;
+    background-image: url(foto/p2.png);
+    background-size: 100px 550px;
+    position: relative;
+}
+#block2{
+    height: 200px;
+    width: 60px;
+    top: -200px;
+    background-color: none;
+    position: relative;
+}
+#block3{
+    height: 550px;
+    width: 100px;
+    top: -200px;
+    background-image: url(foto/p1.png);
+    background-size: 100px 550px;
+    position: relative;
+}
+/*
+/*_____________________2_______________________*/
+
+#block_b{
+    height: 1300px;
+    width: 60px;
+    top: -1300px;
+    position: relative;
+    left: 1700px;
+    animation: 4s block1 infinite linear;
+    animation-delay: 2s;
+}
+#block11{
+    height: 550px;
+    width: 100px;
+    top: -1500px;
+    background-image: url(foto/p2.png);
+    background-size: 100px 550px;
+    position: relative;
+}
+#block22{
+    height: 200px;
+    width: 60px;
+    top: -1500px;
+    background-color: none;
+    position: relative;
+}
+#block33{
+    height: 550px;
+    width: 100px;
+    top: -1500px;
+    background-image: url(foto/p1.png);
+    background-size: 100px 550px;
+    position: relative;
+}
+
+
+
+                                        
+@keyframes slide{
+   from {background-position: 0 0;}
+   to {background-position: -60% 0;}
+}
+@keyframes block1 {
+    0%{left: 1860px;}
+    100%{left: 0px;}
+}
+
